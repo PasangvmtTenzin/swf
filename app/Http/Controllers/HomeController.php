@@ -23,22 +23,11 @@ class HomeController extends Controller
         if($usertype=='1'){
             return view('admin.home');
         }
-        else{
+        elseif ($usertype=='0') {
             return view('User.home');
         }
-    }
-
-    public function auth()
-    {
-        if (auth()->check()) {
-            // User is logged in
-            return view('User.home');
-        } else {
-            // User is not logged in
-            return view('User.dashboard', [
-                'loginRoute' => route('login'),
-                'registerRoute' => route('register'),
-            ]);
+        else{
+            return view('User.dashboard');
         }
     }
     

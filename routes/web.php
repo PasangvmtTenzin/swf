@@ -32,5 +32,3 @@ Route::middleware([
 
 
 route::get('/redirect', [HomeController::class, 'redirect']);
-
-route::get('/auth', [HomeController::class, 'auth']);

@@ -56,12 +56,18 @@
                           
                           @if (auth()->check())
                           {{-- User is logged in --}}
-                          <a href="{{ route('logout') }}">Logout</a>
+                          <li class="nav-item">
+                            <a class="btn btn-primary" href="{{ route('login') }}">Login</a>
+                          </li>
                           @include('User.dashboard')
                             @else
                           {{-- User is not logged in --}}
-                            <a href="{{ $loginRoute }}">Login</a>
-                            <a href="{{ $registerRoute }}">Register</a>
+                          <li class="nav-item">
+                            <a class="btn btn-primary" href="{{ route('login') }}">Login</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="btn btn-Success" href="{{ route('register') }}">Register</a>
+                          </li>
                             @include('User.home')
                          @endif
 
