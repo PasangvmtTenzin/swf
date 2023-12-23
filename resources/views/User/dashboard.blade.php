@@ -10,37 +10,81 @@
       padding-top: 1%;
     }
   </style>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="TemplateMo">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-
-    <title> Student Walfare Fund System</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="home/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="home/css/fontawesome.css">
-    <link rel="stylesheet" href="home/css/templatemo-edu-meeting.css">
-    <link rel="stylesheet" href="home/css/owl.css">
-    <link rel="stylesheet" href="home/css/lightbox.css">
-<!--
-
-TemplateMo 569 Edu Meeting
-
-https://templatemo.com/tm-569-edu-meeting
-
--->
+  @include('User.style')
   </head>
 
 <body>
 
-  <!-- Sub Header -->
-  @include('User.header')
+   <!-- ***** Header Area Start ***** -->
+   <header class="header-area header-sticky">
+      <div class="container">
+        <nav class="main-nav">
+
+          <!-- ***** Logo Start ***** -->
+          <a href="index.html" class="logo">
+            S-W-F
+          </a>
+          <!-- ***** Logo End ***** -->
+          
+          <!-- ***** Menu Start ***** -->
+          <ul class="nav">
+            <li>
+              <a href="#home">Home</a>
+            </li>
+
+            <li>
+              <a href="#about">About</a>
+            </li>
+
+            <li>
+              <a href="#service">Services</a>
+            </li>
+
+            <li>
+              <a href="#plan">Plans</a>
+            </li> 
+
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+
+            @if (Route::has('login'))
+
+            <!-- {{-- User is logged in --}} -->
+
+            @auth
+            
+            <li class="nav-item" id="logout">
+
+              <x-app-layout>
+
+              </x-app-layout>
+
+            </li>
+
+            @else
+            
+            <!-- {{-- User is not logged in --}} -->
+            
+            <li class="nav-item">
+              <a class="btn btn-primary" href="{{ route('login') }}">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-success" href="{{ route('register') }}">Register</a>
+            </li>
+
+            @endauth
+
+            @endif
+
+            </ul>      
+            <a class='menu-trigger'>
+              <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+        </nav>
+      </div>
+  </header>
 
   <!-- ***** Header Area End ***** -->
 

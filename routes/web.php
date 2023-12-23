@@ -32,3 +32,13 @@ Route::middleware([
 
 
 route::get('/redirect', [HomeController::class, 'redirect']);
+
+route::get('/view_home', [HomeController::class, 'view_home']);
+
+route::get('/view_about', [HomeController::class, 'view_about']);
+
+route::get('/view_service', [HomeController::class, 'view_service']);
+
+route::get('/view_plan', [HomeController::class, 'view_plan']);
+
+route::get('/view_contact', [HomeController::class, 'view_contact']);

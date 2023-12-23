@@ -31,4 +31,23 @@ class HomeController extends Controller
         }
     }
     
+    public function view_home(){
+        return view('User.home');
+    }
+
+    public function view_about(){
+        return view('User.about');
+    }
+
+    public function view_service(){
+        return view('User.service');
+    }
+
+    public function view_plan(){
+        return view('User.plan');
+    }
+
+    public function view_contact(){
+        return view('User.contact');
+    }
 }

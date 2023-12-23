@@ -4,7 +4,7 @@
   }
  </Style> -->
  
- <div class="sub-header">
+ <!-- <div class="sub-header">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-sm-8">
@@ -24,7 +24,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
 
   <!-- ***** Header Area Start ***** -->
@@ -40,24 +40,24 @@
           
           <!-- ***** Menu Start ***** -->
           <ul class="nav">
-            <li class="scroll-to-section">
-              <a href="#" class="active">Home</a>
+            <li>
+              <a href="{{ url('view_home') }}">Home</a>
             </li>
 
             <li>
-              <a href="#">About</a>
+              <a href="{{ url('view_about') }}">About</a>
             </li>
 
             <li>
-              <a href="#">Services</a>
+              <a href="{{ url('view_service') }}">Services</a>
             </li>
 
             <li>
-              <a href="#">Plans</a>
+              <a href="{{ url('view_plan') }}">Plans</a>
             </li> 
 
-            <li class="scroll-to-section">
-              <a href="#">Contact</a>
+            <li>
+              <a href="{{ url('view_contact') }}">Contact</a>
             </li>
 
             @if (Route::has('login'))

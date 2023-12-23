@@ -1,4 +1,12 @@
-<div class="container">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  @include('User.style')
+</head>
+<body>
+  @include('User.header')
+  <section class="contact-us" id="contact">
+  <div class="container">
       <div class="row">
         <div class="col-lg-9 align-self-center">
           <div class="row">
@@ -6,7 +14,7 @@
               <form id="contact" action="" method="post">
                 <div class="row">
                   <div class="col-lg-12">
-                    <h2>Let's get in touch</h2>
+                    <h2>Don't Hesitate to Drop Your Message</h2>
                   </div>
                   <div class="col-lg-4">
                     <fieldset>
@@ -30,7 +38,7 @@
                   </div>
                   <div class="col-lg-12">
                     <fieldset>
-                      <button type="submit" id="form-submit" class="button">SEND MESSAGE NOW</button>
+                      <button type="submit" id="form-submit" class="button">SEND FEEDBACK NOW</button>
                     </fieldset>
                   </div>
                 </div>
@@ -62,3 +70,10 @@
         </div>
       </div>
     </div>
+  </section>
+    @include('User.script')
+</body>
+</html>
+
+
+   
