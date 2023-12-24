@@ -15,12 +15,12 @@
         </div>
         <div class="col-lg-4">
           <div class="categories">
-            <h4>future plans</h4>
+            <h4>Future Plans</h4>
             <ul>
-              <li><a href="#">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur quia itaque labore, explicabo nobis quasi praesentium aliquam officiis ex ab error voluptates qui dolore incidunt quos ut perspiciatis voluptatibus. Nam?</a></li>
+              <li><a href="##">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur quia itaque labore, explicabo nobis quasi praesentium aliquam officiis ex ab error voluptates qui dolore incidunt quos ut perspiciatis voluptatibus. Nam?</a></li>
             </ul>
             <div class="main-button-red">
-              <a href="#">All Upcoming Plans</a>
+              <a href="##">All Upcoming Plans Here</a>
             </div>
           </div>
         </div>

@@ -99,3 +99,15 @@
   </header>
 
   <!-- ***** Header Area End ***** -->
+  <!-- <style>
+    @media screen and (max-width: 860px) {
+  .flex-direction-nav .flex-prev {
+    opacity: 1;
+    left: 10px;
+  }
+  .flex-direction-nav .flex-next {
+    opacity: 1;
+    right: 10px;
+  }
+  </style> -->
+  
